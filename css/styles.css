@@ -16,46 +16,6 @@ html, body {
   margin-right: auto;
 }
 
-.logo {
-  display: block;
-  height: 100px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px
-}
-
-.pure-group {
-  border-style: none;
-  padding: 0px;
-}
-
-.button-success {
-  color: white;
-  border-radius: 4px;
-  background: grey
-}
-
-.button-xlarge {
-  font-size: 125%;
-}
-
-button {
-  display: block;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 40px
-}
-
-label {
-  display: inline-block;
-  width: 150px;
-  text-align: left;
-}
-
 #wrapper {
   min-height: 100%;
   position: relative;
