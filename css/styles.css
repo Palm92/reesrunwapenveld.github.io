@@ -8,7 +8,7 @@ html, body {
   height: 100%;
 }
 
-.koor {
+.rees {
   display: block;
   height: auto;
   width: 100%;
@@ -73,7 +73,7 @@ label {
   text-transform: uppercase;
 }
 
-#content {
+#contact {
   padding-bottom: 100px;
   padding-left: 10px;
   padding-right: 10px;
