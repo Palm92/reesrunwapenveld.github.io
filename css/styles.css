@@ -17,7 +17,6 @@ html, body {
 }
 
 .button {
-    position: absolute;
     font-size: 16px;
     font-weight: 800;
     text-transform: uppercase;
