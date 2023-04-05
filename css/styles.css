@@ -18,8 +18,11 @@ html, body {
 
 .button {
     position: absolute;
-    background-color:#0a0a23;
-    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color:#5bc0de;
+    color: #FFFFFF;
     border:none;
     border-radius:10px;
   }
