@@ -41,12 +41,13 @@ html, body {
   margin: 0 auto;
 }
 
-#navigatie {
+#topbar {
     text-align: center;
 }
 
 ul {
     display: inline-block;
+    list-style: none;
 }
 
 #footer {
