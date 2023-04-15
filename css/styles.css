@@ -15,6 +15,7 @@ header {
 
 .logo {
 	flex: 1;
+	width: min(50vw, 200px);
 }
 
 nav ul {
