@@ -7,6 +7,10 @@ body {
 
 /* Header styles */
 header {
+	background-image: url("/img/rees.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 	background-color: #f2f2f2;
 	padding: 20px;
 	display: flex;
