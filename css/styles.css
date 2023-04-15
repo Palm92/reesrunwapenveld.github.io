@@ -24,7 +24,6 @@ header {
 
 .logo {
   flex: 1;
-  max-width: 400px;
 }
 
 nav ul {
@@ -111,7 +110,7 @@ footer p {
   }
   
   .logo {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 10px;
   }
   
