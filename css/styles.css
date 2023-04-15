@@ -1,51 +1,93 @@
-* {
- font-family: Verdana, Arial, Times New Roman;
+/* Body styles */
+body {
+ font-family: Verdana, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+/* Header styles */
+header {
+	background-color: #f2f2f2;
+	padding: 20px;
+	display: flex;
+	align-items: center;
 }
 
-.rees {
-  display: block;
-  height: auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.logo {
+	flex: 1;
 }
 
-#wrapper {
-  min-height: 100%;
-  position: relative;
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
-#header {
-  background-image: url("/img/rees.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  padding:100px 0;
-  opacity: 0.8;
-  color: white;
-  text-transform: uppercase;
+nav ul li {
+	margin-right: 20px;
 }
 
-#content {
-  padding-bottom: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
-  max-width: 1000px;
-  margin: 0 auto;
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#footer {
-  width: 100%;
-  height: 100px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  text-align: center;
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li {
+	display: block;
+	margin: 5px 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+nav a:hover {
+	color: #666;
+}
+
+/* Main styles */
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer nav ul li a {
+	color: #fff;
+}
+
+footer p {
+	margin: 0;
+	font-size: 14px;
 }
