@@ -3,10 +3,6 @@ html, body {
   margin: 0;
 }
 
-main {
-  min-height: calc(100% - 2em); /* subtract the height of the header and footer */
-}
-
 /* Body styles */
 body {
  font-family: Verdana, Arial, sans-serif;
@@ -88,7 +84,6 @@ p {
 
 /* Footer styles */
 footer {
-  	height: 2em; /* set the height of the footer */
 	background-color: #333;
 	color: #fff;
 	padding: 20px;
