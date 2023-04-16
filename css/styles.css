@@ -1,201 +1,82 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
+/* General styles */
 
-/* Body styles */
 body {
-  font-family: Verdana, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 /* Header styles */
-header {
-  background-image: url("/img/rees.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
+header {
+    background-color: #3a3a3a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .logo img {
-  max-width: 100%;
-  height: auto;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li {
+    width: 200px;
+}
+
+nav ul ul li a {
+    color: #333;
+}
+
+nav ul ul li a:hover {
+    background-color: #f5f5f5;
 }
 
 /* Main styles */
+
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    padding: 50px;
 }
 
 h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-p {
-  line-height: 1.5;
+    font-size: 36px;
 }
 
 /* Footer styles */
+
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-footer nav ul li a {
-  color: #fff;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-}
-
-/* Hamburger menu styles */
-nav {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #444;
-  z-index: 1;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-nav li {
-  display: block;
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 22px;
-}
-nav a {
-  display: block;
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-}
-nav a:hover {
-  color: #f00;
-}
-
-/* Hamburger icon styles */
-.menu-icon {
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  cursor: pointer;
-}
-.menu-icon span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #000;
-  margin-bottom: 5px;
-}
-.menu-icon span:last-child {
-  margin-bottom: 0;
-}
-
-/* Submenu styles */
-nav ul ul {
-  position: static;
-  visibility: hidden;
-  opacity: 0;
-  display: none;
-  margin-top: 0;
-  background-color: #444;
-  z-index: 2;
-}
-nav ul ul li {
-  display: block;
-  font-size: 16px;
-  text-align: center;
-}
-nav ul ul a {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-}
-nav ul ul a:hover {
-  color: #f00;
-}
-
-/* Show submenu on hover */
-nav li:hover > ul {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-/* Show and hide hamburger menu on click */
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-  nav {
-    display: none;
-  }
-  nav.active {
-    display: block;
-  }
-  nav.active ul {
-    display: block;
-  }
-  nav.active li {
-    margin-bottom: 0;
-  }
-}
-  
-  .logo {
-    justify-content: center;
-  }
-
-  .logo img {
-    max-width: 80%;
-  }
-  
-  main {
+    background-color: #ccc;
+    color: #333;
     padding: 10px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
-  }
-  
-  footer nav {
-    margin-bottom: 10px;
-  }
 }
