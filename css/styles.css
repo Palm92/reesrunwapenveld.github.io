@@ -123,6 +123,45 @@ footer p {
     max-width: 80%;
   }
   
+  .menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #38d3dd;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #103f42;
+}
+  
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
