@@ -116,7 +116,11 @@ footer p {
   }
   
   .logo {
-    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .logo img {
+    max-width: 80%;
   }
   
   nav ul {
