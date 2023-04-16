@@ -32,6 +32,14 @@ header {
   height: auto;
 }
 
+nav {
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+}
+
 nav ul {
   list-style: none;
   display: flex;
