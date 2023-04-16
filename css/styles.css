@@ -166,33 +166,31 @@ footer p {
     .toggle-button:focus .bar {
         background-color: #333;
     }
-}
 
+    .logo {
+      justify-content: center;
+    }
   
-  .logo {
-    justify-content: center;
-  }
-
-  .logo img {
-    max-width: 80%;
-  }
-  
-  main {
-    padding: 10px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  footer nav {
-    margin-bottom: 10px;
-  }
+    .logo img {
+      max-width: 80%;
+    }
+    
+    main {
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    footer {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    footer nav {
+      margin-bottom: 10px;
+    }
 }
