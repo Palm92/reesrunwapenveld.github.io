@@ -21,119 +21,107 @@ header {
     height: 50px;
 }
 
-/* Hamburger menu styles */
-
-.hamburger {
-    display: none;
-}
-
+/* Hamburger menu for mobile view */
 nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li:hover > ul {
-    display: block;
-}
-
-nav ul ul {
-    position: absolute;
     display: none;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-nav ul ul li {
-    width: 200px;
+.toggle-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
-nav ul ul li a {
-    color: #333;
+.bar {
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: transform 0.3s ease-in-out;
 }
 
-nav ul ul li a:hover {
-    background-color: #f5f5f5;
+.toggle-button.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
-@media (max-width: 767px) {
-    /* Styles for screens below 768px */
+.toggle-button.open .bar:nth-child(2) {
+    opacity: 0;
+}
 
-    .logo img {
-        height: 40px;
-    }
+.toggle-button.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        margin-right: 20px;
-    }
+@media screen and (max-width: 768px) {
 
     nav {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 60px;
         left: 0;
-        right: 0;
+        width: 100%;
+        background-color: #f9f9f9;
         z-index: 1;
-        background-color: #3a3a3a;
-        padding: 10px;
     }
 
     nav ul {
-        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    nav li {
+        display: block;
+        margin-bottom: 15px;
     }
 
-    nav ul li a {
-        color: #fff;
+    nav a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        font-size: 18px;
+        text-decoration: none;
     }
 
-    nav ul ul {
-        position: static;
-        display: none;
-        margin-left: 20px;
-        margin-top: 10px;
+    .toggle-button {
+        display: block;
     }
 
-    nav ul ul li {
-        width: 100%;
+    .toggle-button:focus {
+        outline: none;
     }
 
-    nav ul ul li a {
-        color: #fff;
+    .toggle-button.open .bar {
+        background-color: #fff;
     }
 
-    nav ul ul li a:hover {
+    .toggle-button.open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .toggle-button.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-button.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .toggle-button:hover .bar {
+        background-color: #ccc;
+    }
+
+    .toggle-button:focus .bar {
         background-color: #333;
     }
-
-    /* Show the menu when the hamburger icon is clicked */
-
-    .show {
-        display: block !important;
-    }
 }
+
 
 /* Main styles */
 
