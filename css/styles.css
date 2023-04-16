@@ -123,10 +123,6 @@ footer p {
     max-width: 80%;
   }
   
-  nav {
-  display: none;
-  }
-  
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
